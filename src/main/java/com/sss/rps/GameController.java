@@ -3,6 +3,7 @@ package com.sss.rps;
 import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.origin.SystemEnvironmentOrigin;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,9 +21,14 @@ public class GameController {
     // Display the main page
     @GetMapping("/")
     public String showGamePage() {
+    	 System.out.print("just checking codebuild");
         return "index"; // Renders index.html
     }
 
+   
+    
+    
+    
     // Handle the POST request when the user submits their choice
     @PostMapping("/play")
     public String playGame(@RequestParam("choice") String userChoice, Model model) {
