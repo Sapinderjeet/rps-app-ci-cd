@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <h1>Rock Paper Scissors Game</h1>
+    <form th:action="@{/play}" method="post">
+        <label>
+            <input type="radio" name="choice" value="rock" required> Rock
+        </label>
+        <label>
+            <input type="radio" name="choice" value="paper"> Paper
+        </label>
+        <label>
+            <input type="radio" name="choice" value="scissors"> Scissors
+        </label>
+        <br><br>
+        <button type="submit">Play</button>
+    </form>
+    <br>
+    <a href="/score" class="styled-link">View Score</a>
+</body>
+</html>

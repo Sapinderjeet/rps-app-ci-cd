@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <h1>Score</h1>
+    <div class="score">
+        <p>Total Wins: <span th:text="${score.win}"></span></p>
+        <p>Total Losses: <span th:text="${score.lose}"></span></p>
+        <p>Total Ties: <span th:text="${score.ties}"></span></p>
+    </div>
+    <br>
+    <a href="/" class="styled-link">Play Again</a>
+</body>
+</html>

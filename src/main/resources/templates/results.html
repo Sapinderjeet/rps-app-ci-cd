@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Result</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <h1>Game Result</h1>
+    <div class="result">
+        <p>Your choice: <span th:text="${userChoice}"></span></p>
+        <p>Computer's choice: <span th:text="${computerChoice}"></span></p>
+        <p>Outcome: <span th:text="${outcome}"></span></p>
+    </div>
+    <br>
+    <a href="/" class="styled-link">Play Again</a>
+    <br><br>
+    <a href="/score" class="styled-link">View Score</a>
+</body>
+</html>

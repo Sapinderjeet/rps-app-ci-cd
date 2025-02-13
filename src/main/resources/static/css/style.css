@@ -1,0 +1,73 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f5ff; /* Light blue background */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff; /* Modern blue for headings */
+}
+
+form {
+    margin: 20px auto;
+    display: inline-block;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button, .styled-link {
+    background-color: #007bff; /* Modern blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline for links */
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .styled-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+.result span {
+    font-weight: bold;
+    color: #007bff; /* Modern blue for result values */
+}
+
+.score {
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+.score span {
+    font-weight: bold;
+    color: #007bff; /* Modern blue for score values */
+}
